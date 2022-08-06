@@ -1,0 +1,8 @@
+package maven_intro.browserSetup;
+
+public class ChromeSetup {
+
+	public static void main(String[] args) {
+		
+	}
+}
