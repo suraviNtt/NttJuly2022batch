@@ -1,0 +1,23 @@
+package maven_intro.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class GoogleSearchPage {
+
+	
+	@FindBy(name = "q")
+	WebElement searchbox;
+	
+	@FindBy(xpath = "(//*[@id='rso']//div[1]//a[1])[1]")
+	WebElement firstSearchResult;
+
+	public GoogleSearchPage(WebDriver driver) {
+		PageFactory.initElements(driver , this);
+	}
+	
+	
+	
+}

@@ -1,0 +1,12 @@
+package maven_intro.handlers;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+
+public class CommonMethods {
+
+	
+	public void enterText(WebElement element) {
+		
+	}
+}

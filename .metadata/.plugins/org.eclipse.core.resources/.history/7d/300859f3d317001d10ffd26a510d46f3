@@ -1,0 +1,22 @@
+package maven_intro.handlers;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Wait;
+
+public class CommonMethods {
+
+	/**
+	 * Entering text value in fields
+	 * 
+	 * @param element
+	 * @param value
+	 */
+	public void enterText(WebElement element, String value) {
+		try {
+			element.sendKeys(value);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Data is not enetered in the text field ");
+		}
+	}
+}
