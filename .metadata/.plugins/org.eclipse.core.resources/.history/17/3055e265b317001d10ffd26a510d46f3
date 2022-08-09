@@ -1,0 +1,22 @@
+package maven_intro.tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import maven_intro.browserSetup.BrowserSetup;
+import maven_intro.utils.PropertiesReader;
+
+public class GoggleSearchTest {
+	
+	public static void main(String[] args) {
+		
+		String browser = PropertiesReader.getBrowserName();
+		String url = PropertiesReader.getAppURL();
+		WebDriver driver = BrowserSetup.setBrowser(browser);
+		driver.get(url);
+		
+		driver.findElement(By.name("q")).sendKeys("Selenium");
+		
+	}
+
+}

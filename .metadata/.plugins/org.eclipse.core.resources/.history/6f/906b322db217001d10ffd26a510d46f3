@@ -1,0 +1,29 @@
+package maven_intro.browserSetup;
+
+
+
+/**
+ * 1. multiple browsers support
+ * 2. maven based project
+ * 3. should have module segregation and reusable methods
+ * 4. should use testng to execute testcases
+ * 5. should read input data from sources like excel, properties , json or xml
+ * 6. should include readme.md / readme.txt with project summary in the project folder
+ * */
+ 
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BrowserSetup {
+
+	public static void setBrowser(String browserName) {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package maven_intro.utils;
+
+public class PathProvider {
+	
+	public static String getBasepath() {
+		return System.getProperty("user.dir");
+	}
+	
+	public static String getPropertiesFilelocation() {
+		return getBasepath()+"/src/main/resources/config.properties";
+	}
+
+	public static void main(String[] args) {
+		System.out.println(getPropertiesFilelocation());
+	}
+}

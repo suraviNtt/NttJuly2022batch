@@ -1,0 +1,25 @@
+package maven_intro.utils;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+public class PropertiesReader {
+
+	
+	public static void main(String[] args) {
+		
+		Properties prop = new Properties();
+		String fileLocation = PathProvider.getPropertiesFilelocation();
+		FileReader file = null;
+		try {
+			file = new FileReader(fileLocation);
+			prop.load(file);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
