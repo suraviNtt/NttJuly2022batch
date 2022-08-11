@@ -27,6 +27,14 @@ public class PropertiesReader {
 	}
 	
 	public String getAppURL() {
-		return (String) prop.get("url");
+		return (String) prop.get("urlIRCTC");
+	}
+	
+	public int getImplicitWait() {
+		return Integer.parseInt((String) prop.get("implicitwait"));
+	}
+	
+	public int getHardWait() {
+		return Integer.parseInt((String) prop.get("hardwait"));
 	}
 }

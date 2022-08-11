@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-10T12:28:58 IST" name="Default suite" finished-at="2022-08-10T12:29:10 IST" duration-ms="12350">
+    <groups>
+      <group name="sanity">
+        <method signature="GSearch1Test.testSearch()[pri:1, instance:maven_intro.tests.GSearch1Test@368247b9]" name="testSearch" class="maven_intro.tests.GSearch1Test"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-08-10T12:28:58 IST" name="Default test" finished-at="2022-08-10T12:29:10 IST" duration-ms="12350">
+      <class name="maven_intro.tests.GSearch1Test">
+        <test-method is-config="true" signature="bt()[pri:0, instance:maven_intro.tests.GSearch1Test@368247b9]" started-at="2022-08-10T12:28:58 IST" name="bt" finished-at="2022-08-10T12:28:58 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:maven_intro.tests.GSearch1Test@368247b9]" started-at="2022-08-10T12:28:58 IST" name="setup" finished-at="2022-08-10T12:29:04 IST" duration-ms="6399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSearch()[pri:1, instance:maven_intro.tests.GSearch1Test@368247b9]" started-at="2022-08-10T12:29:04 IST" name="testSearch" finished-at="2022-08-10T12:29:10 IST" duration-ms="5438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:maven_intro.tests.GSearch1Test@368247b9]" started-at="2022-08-10T12:29:10 IST" name="teardown" finished-at="2022-08-10T12:29:10 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="aftertest()[pri:0, instance:maven_intro.tests.GSearch1Test@368247b9]" started-at="2022-08-10T12:29:10 IST" name="aftertest" finished-at="2022-08-10T12:29:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+      </class> <!-- maven_intro.tests.GSearch1Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

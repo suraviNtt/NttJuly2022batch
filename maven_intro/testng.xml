@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Google Test">
+		<classes>
+			<class name="maven_intro.tests.GSearch1Test" />
+			<class name="maven_intro.tests.GoggleSearchTest" />
+			<class name="maven_intro.tests.GSearchTest" />
+		</classes>
+		<!-- <method-selectors> <method-selector> <selector-class name=""> <methods> 
+			<include name=""></include> </methods> </selector-class> </method-selector> 
+			</method-selectors> -->
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

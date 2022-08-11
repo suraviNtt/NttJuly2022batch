@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="sanity" />
+			</run>
+		</groups>
+		<classes>
+			<class name="maven_intro.tests.GSearch1Test" />
+			<class name="maven_intro.tests.GoggleSearchTest" />
+			<class name="maven_intro.tests.GSearchTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

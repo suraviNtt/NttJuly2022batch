@@ -1,6 +1,7 @@
 package maven_intro.handlers;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class CommonMethods {
@@ -45,6 +46,38 @@ public class CommonMethods {
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Data is not enetered in the text field ");
+		}
+	}
+
+	/**
+	 * fetching current url
+	 * 
+	 * @param driver
+	 * @return
+	 */
+	public String getCurrentURL(WebDriver driver) {
+		return driver.getCurrentUrl();
+	}
+
+	/**
+	 * fetching current page title
+	 * 
+	 * @param driver
+	 * @return
+	 */
+	public String getPageTitle(WebDriver driver) {
+		return driver.getTitle();
+	}
+	
+	/**
+	 * 
+	 * @param element
+	 */
+	public void elementVisibilityCheck(WebElement element) {
+		try {
+		element.isDisplayed();
+		}catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

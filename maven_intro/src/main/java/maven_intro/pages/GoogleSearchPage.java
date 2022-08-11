@@ -34,4 +34,5 @@ public class GoogleSearchPage {
 		commonMethods = new CommonMethods();
 		commonMethods.clickOnElement(firstSearchResult);
 	}
+	
 }
